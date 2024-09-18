@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlappyBird</title> 
+    <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+    <style>
+       body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
+
+        #canvas-container {
+            width: 100%;
+            max-width: 400px;
+            aspect-ratio: 280 / 438;
+            position: relative;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000;
+        }
+
+        @media (max-width: 480px) {
+            #canvas-container {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="276" height="414"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>
